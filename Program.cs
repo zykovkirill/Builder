@@ -23,9 +23,10 @@ Console.ReadLine();
 [Flags]
 public enum WoodProperty : byte
 {
-    Painted,
-    Polished,
-    Varnished
+    None = 0,
+    Painted= 1 << 0,
+    Polished = 1 << 1,
+    Varnished = 1 << 2
 
 }
 
